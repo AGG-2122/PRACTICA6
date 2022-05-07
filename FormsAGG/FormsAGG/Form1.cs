@@ -16,5 +16,14 @@ namespace FormsAGG
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Nombre = tNombre.Text;
+            string Apellidos = tApellidos.Text;
+            string telefono = tTeléfono.Text;
+
+            tListaSocios.Text = "Nombre: " + Nombre + " Apellidos: " + Apellidos + " Teléfono: " + telefono;
+        }
     }
 }

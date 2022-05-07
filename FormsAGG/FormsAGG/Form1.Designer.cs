@@ -34,10 +34,10 @@ namespace FormsAGG
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tNombre = new System.Windows.Forms.TextBox();
+            this.tApellidos = new System.Windows.Forms.TextBox();
+            this.tTeléfono = new System.Windows.Forms.TextBox();
+            this.tListaSocios = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -48,6 +48,7 @@ namespace FormsAGG
             this.button1.TabIndex = 0;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -85,45 +86,45 @@ namespace FormsAGG
             this.label4.TabIndex = 4;
             this.label4.Text = "Lista Socios";
             // 
-            // textBox1
+            // tNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.tNombre.Location = new System.Drawing.Point(94, 24);
+            this.tNombre.Name = "tNombre";
+            this.tNombre.Size = new System.Drawing.Size(100, 20);
+            this.tNombre.TabIndex = 5;
             // 
-            // textBox2
+            // tApellidos
             // 
-            this.textBox2.Location = new System.Drawing.Point(316, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.tApellidos.Location = new System.Drawing.Point(316, 25);
+            this.tApellidos.Name = "tApellidos";
+            this.tApellidos.Size = new System.Drawing.Size(100, 20);
+            this.tApellidos.TabIndex = 6;
             // 
-            // textBox3
+            // tTeléfono
             // 
-            this.textBox3.Location = new System.Drawing.Point(515, 25);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.tTeléfono.Location = new System.Drawing.Point(515, 25);
+            this.tTeléfono.Name = "tTeléfono";
+            this.tTeléfono.Size = new System.Drawing.Size(100, 20);
+            this.tTeléfono.TabIndex = 7;
             // 
-            // textBox4
+            // tListaSocios
             // 
-            this.textBox4.Location = new System.Drawing.Point(27, 142);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(588, 176);
-            this.textBox4.TabIndex = 8;
+            this.tListaSocios.Location = new System.Drawing.Point(27, 142);
+            this.tListaSocios.Multiline = true;
+            this.tListaSocios.Name = "tListaSocios";
+            this.tListaSocios.ReadOnly = true;
+            this.tListaSocios.Size = new System.Drawing.Size(588, 176);
+            this.tListaSocios.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tListaSocios);
+            this.Controls.Add(this.tTeléfono);
+            this.Controls.Add(this.tApellidos);
+            this.Controls.Add(this.tNombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -143,10 +144,10 @@ namespace FormsAGG
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tNombre;
+        private System.Windows.Forms.TextBox tApellidos;
+        private System.Windows.Forms.TextBox tTeléfono;
+        private System.Windows.Forms.TextBox tListaSocios;
     }
 }
 
