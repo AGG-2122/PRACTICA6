@@ -72,9 +72,9 @@ namespace FormsAGG
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(456, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Telefono";
+            this.label3.Text = "Móvil";
             // 
             // label4
             // 
